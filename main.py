@@ -1,22 +1,17 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from circle_pattern import build_lps
 from longest_sub import longest_substring
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
 def main():
-    s = input("Enter a string: ")
-    print("Longest length:", longest_substring(s))
+    print("=== Task 1: Longest Unique Substring ===")
+    s1 = input("Enter a string for longest unique substring: ")
+    length = longest_substring(s1)
+    print(f"Longest substring without repeating characters: {length}\n")
+
+    print("=== Task 2: Circular Binary 1111 ===")
+    s2 = input("Enter a binary string for circular 1111 check: ")
+    print(f"Result a binary Circle is: {build_lps(s2)}")
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
